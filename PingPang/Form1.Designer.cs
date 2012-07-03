@@ -28,66 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.rtBoy = new System.Windows.Forms.RichTextBox();
+            this.rtGirl = new System.Windows.Forms.RichTextBox();
+            this.组队 = new System.Windows.Forms.Button();
+            this.rtResult = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // rtBoy
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(55, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(100, 96);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.rtBoy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rtBoy.Location = new System.Drawing.Point(0, 0);
+            this.rtBoy.Name = "rtBoy";
+            this.rtBoy.Size = new System.Drawing.Size(200, 277);
+            this.rtBoy.TabIndex = 1;
+            this.rtBoy.Text = "pubby\n小五\n小六\n石头\njjj\n三哥\n甲文\n小吴\n小袁\n小冯\n小何\n小姚\n昌哥\n西施\n老大\n袁飞";
             // 
-            // richTextBox2
+            // rtGirl
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(40, 204);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(100, 96);
-            this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "";
+            this.rtGirl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtGirl.Location = new System.Drawing.Point(0, 277);
+            this.rtGirl.Name = "rtGirl";
+            this.rtGirl.Size = new System.Drawing.Size(200, 217);
+            this.rtGirl.TabIndex = 2;
+            this.rtGirl.Text = "叶子\n酱油\n小虞\n汤圆\n马燕\n小姜\n高磊\n丽燕\n小魏\n小郭\n小席\n波波";
             // 
-            // button1
+            // 组队
             // 
-            this.button1.Location = new System.Drawing.Point(196, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.组队.Location = new System.Drawing.Point(206, 0);
+            this.组队.Name = "组队";
+            this.组队.Size = new System.Drawing.Size(83, 23);
+            this.组队.TabIndex = 3;
+            this.组队.Text = "组队";
+            this.组队.UseVisualStyleBackColor = true;
+            this.组队.Click += new System.EventHandler(this.button1_Click);
             // 
-            // richTextBox3
+            // rtResult
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(303, 12);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(244, 375);
-            this.richTextBox3.TabIndex = 1;
-            this.richTextBox3.Text = "";
+            this.rtResult.Dock = System.Windows.Forms.DockStyle.Right;
+            this.rtResult.Location = new System.Drawing.Point(287, 0);
+            this.rtResult.Name = "rtResult";
+            this.rtResult.Size = new System.Drawing.Size(272, 494);
+            this.rtResult.TabIndex = 1;
+            this.rtResult.Text = "";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.rtGirl);
+            this.panel1.Controls.Add(this.rtBoy);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 494);
+            this.panel1.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 399);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(559, 494);
+            this.Controls.Add(this.rtResult);
+            this.Controls.Add(this.组队);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox rtBoy;
+        private System.Windows.Forms.RichTextBox rtGirl;
+        private System.Windows.Forms.Button 组队;
+        private System.Windows.Forms.RichTextBox rtResult;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
