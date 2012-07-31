@@ -51,7 +51,7 @@ namespace PingPang
             int groupCount = totalMembers / groupMemberCount;
             
 
-            Dictionary<int, List<string>> groups = new Dictionary<int, List<string>>();
+            Dictionary<int, List<string>> groups  = new Dictionary<int, List<string>>();
             for (int i = 0; i < totalMembers; i++)
             {
                 var groupNo = i % groupCount;
