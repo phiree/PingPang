@@ -44,13 +44,13 @@ namespace PingPang
                 AList.Sort(randomCompare);
             }
             catch { }
-            int totalMember=AList.Count;
-            if(totalMember%groupMemberCount!=0) throw new Exception("人数不能整除");
-            int groupCount = totalMember / groupMemberCount;
+            int totalMembers=AList.Count;
+            if(totalMembers%groupMemberCount!=0) throw new Exception("人数不能整除");
+            int groupCount = totalMembers / groupMemberCount;
             
 
             Dictionary<int, List<string>> groups = new Dictionary<int, List<string>>();
-            for (int i = 0; i < totalMember; i++)
+            for (int i = 0; i < totalMembers; i++)
             {
                 var groupNo = i % groupCount;
                 if (!groups.ContainsKey(groupNo))
