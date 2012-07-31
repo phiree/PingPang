@@ -54,7 +54,7 @@ namespace PingPang
             Dictionary<int, List<string>> groups  = new Dictionary<int, List<string>>();
             for (int i = 0; i < totalMembers; i++)
             {
-                var groupNo = i % groupCount;
+                var groupNo  = i % groupCount;
                 if (!groups.ContainsKey(groupNo))
                 {
                     List<string> groupMemers = new List<string>();
