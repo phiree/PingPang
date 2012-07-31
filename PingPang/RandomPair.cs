@@ -43,6 +43,8 @@ namespace PingPang
             {
                 AList.Sort(randomCompare);
             }
+
+
             catch { }
             int totalMembers=AList.Count;
             if(totalMembers%groupMemberCount!=0) throw new Exception("人数不能整除");
