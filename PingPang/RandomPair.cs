@@ -63,7 +63,7 @@ namespace PingPang
                 groups[groupNo].Add(AList[i]+"  ");
             }
 
-            return groups;
+            return groups ;
         }
 
         private int randomCompare(string s, string s2)
